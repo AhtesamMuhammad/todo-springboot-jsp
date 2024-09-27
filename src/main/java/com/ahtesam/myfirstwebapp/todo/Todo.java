@@ -3,13 +3,20 @@ package com.ahtesam.myfirstwebapp.todo;
 import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Size;
+
+//JPA
+// Bean -> Database table
 
 @Entity
 public class Todo {
 
+    public Todo(){}
+
     @Id
+    @GeneratedValue
     private int id;
     private String username;
     
